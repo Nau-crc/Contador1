@@ -1,35 +1,26 @@
-const getRemainTime = deadline => {
-let now = new Date(),
-    remainTime = (new Date(deadline) - now + 1000) / 1000,
-    remainSeconds = ('0' + Math.floor(remainTime / 60)).slice(-2),
-    remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
-    remainHours = ('0' + Math.floor(remainTime / 3600 % 240)).slice(-2),
-    remainDays = Math.floor(remainTime / (3600 *24));
-};
+  var countDown = new Date ("Jan 7, 2021 08:30:00").getTime();
 
-return {
-  remainTime,
-  remainSeconds,
-  remainMinutes,
-  remainHours,
-  remainDays
-  
-};
+  function startSchool(){
+    var now = new Date().getTime();
+    gap = countDown - now;
 
-const countdown = (deadline, elem, finalMessage) => {
-  const el = document.getElementById(elem);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
 
-  const timerUpdate = setInterval( () => {
-    let t = getRemainTime(deadline);
-    el.innerHTML = `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s`;
+    var d = Math.floor(gap/ (days));
+    var h = Math.floor((gap % (days)) / (hours));
+    var m = Math.floor((gap % (hours)) / (minutes));
+    var s = Math.floor((gap % (minutes)) / seconds);
 
-    if(t.remainTime <= 1) {
-      clearInterval(timerUpdate);
-      el.innerHTML = finalMessage;
-    }
-  }, 1000)
+    document.getElementById('days').innerText = d;
+    document.getElementById('hours').innerText = h;
+    document.getElementById('minutes').innerText = m;
+    document.getElementById('seconds').innerText = s;
+  }
 
-};
-
-countdown('Nov 12 2020 14:00:00 GMT+0200', clock, "Feliz Fin de Cuarentena");
-
+  setInterval(function(){
+    startSchool();
+  },1000);
+  console.log()

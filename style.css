@@ -18,12 +18,13 @@
 body {
     text-align: center;
     padding-top: 50px;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     background-image: url("https://i.gifer.com/4A5.gif");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height:inherit;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:inherit;
 
 }
 
@@ -55,19 +56,43 @@ button {
 #clock {
     padding: 70px;
     font-size: larger;
-    color: white;
-    
+    color: black;
 }
 
 
 #resetButton {
     background-color: #6efd6e;
-
-    
 }
 
 #startButton {
     background-color: #f3e777;
-    
+}
 
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+ul {
+    display:flex;
+    flex-wrap: raw;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+}
+
+.container #days::after {
+    content: 'Days';
+}
+.container #hours::after {
+    content: 'Hours';
+}
+.container #minutes::after {
+    content: 'Minutes';
+}
+.container #seconds::after {
+    content: 'Seconds';
 }
