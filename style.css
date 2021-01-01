@@ -16,83 +16,50 @@
 }
 
 body {
-    text-align: center;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    background-image: url("https://i.gifer.com/4A5.gif");
-    height:inherit;
+    background-image: url("https://media.giphy.com/media/l2oRndKUPpnJNPu1q4/giphy.gif");
+    background-attachment: fixed;
     background-position:center;
     background-repeat:no-repeat;
-    background-size:inherit;
+    background-size:cover;
 
+}
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 225px;
+    align-items: center;
 }
 
 h1 {
     font-style: normal;
     color: rgb(139, 232, 255);
-    padding:40px;
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
-button { 
-  text-align: center;
-  border: none;
-  color: white;
-  padding: 10px 22px;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 50%;
-  display: flexbox;
-}
 
-#clock {
-    padding: 70px;
-    font-size: larger;
-    color: black;
-}
-
-
-#resetButton {
-    background-color: #6efd6e;
-}
-
-#startButton {
-    background-color: #f3e777;
-}
-
-.container {
-    display:flex;
+.clock {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-
-}
-
-ul {
-    display:flex;
-    flex-wrap: raw;
     font-size: 50px;
     color:white;
     text-align: center;
 }
 
-.container #days::after {
-    content: 'Days';
+
+.clock #days::after {
+    content: ' Days ';
 }
-.container #hours::after {
-    content: 'Hours';
+.clock #hours::after {
+    content: ' Hours ';
 }
-.container #minutes::after {
-    content: 'Minutes';
+.clock #minutes::after {
+    content: ' Minutes ';
 }
-.container #seconds::after {
-    content: 'Seconds';
+.clock #seconds::after {
+    content: ' Seconds ';
 }

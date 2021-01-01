@@ -1,4 +1,4 @@
-  var countDown = new Date ("Jan 7, 2021 08:30:00").getTime();
+  var countDown = new Date ("Mar 19, 2021 08:30:00").getTime();
 
   function startSchool(){
     var now = new Date().getTime();
