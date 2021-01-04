@@ -5,7 +5,7 @@ En una entrevista técnica se nos pide que desarrollemos un pequeño ejercicio q
 En el enunciado se puede entrever que se van a valorar, también, nuestros skills de HTML, y Css así como la creatividad y diseño.
 
 ## Realizadora:
-[Laura Rodriguez]
+- [Laura Rodriguez]
 
 ## Así que:
 
