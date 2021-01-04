@@ -9,7 +9,7 @@ En el enunciado se puede entrever que se van a valorar, también, nuestros skill
 
 ## Así que:
 
-Se ha manejado el tiempo para hasta la fecha de inicio de clases de nuevo despues del descanso por las fiestas.
+Se ha manejado el tiempo para hasta la fecha de fin de curso y celebrar que somos Coders Junior.
 
 ## Core Skills:
 
